@@ -16,8 +16,8 @@ public class Lesson {
 	@Column(name="lesson_id")
 	private int id;
 	
-	@Column(name="title")
-	private String title;
+	@Column(name="type")
+	private String type;
 	
 	@Column(name="info")
 	private String description;
@@ -32,8 +32,8 @@ public class Lesson {
 		
 	}
 	
-	public Lesson(String title, String description, String videoUrl, double price) {
-		this.title = title;
+	public Lesson(String type, String description, String videoUrl, double price) {
+		this.type = type;
 		this.description = description;
 		this.videoUrl = videoUrl;
 		this.price = price;
@@ -47,12 +47,12 @@ public class Lesson {
 		this.id = id;
 	}
 
-	public String getTitle() {
-		return title;
+	public String getType() {
+		return type;
 	}
 
-	public void setTitle(String title) {
-		this.title = title;
+	public void setType(String type) {
+		this.type = type;
 	}
 
 	public String getDescription() {
@@ -81,7 +81,7 @@ public class Lesson {
 
 	@Override
 	public String toString() {
-		return "Lesson [id=" + id + ", title=" + title + ", description=" + description + ", videoUrl=" + videoUrl + ", price="
+		return "Lesson [id=" + id + ", type=" + type + ", description=" + description + ", videoUrl=" + videoUrl + ", price="
 				+ price + "]";
 	}
 	

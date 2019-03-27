@@ -1,10 +1,10 @@
-package com.mouniteachesdota.dao;
+package com.mouniteachesdota.service;
 
 import java.util.List;
 
 import com.mouniteachesdota.entity.Lesson;
 
-public interface LessonDAO {
+public interface LessonService {
 
 	public List<Lesson> getLessons();
 
